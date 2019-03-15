@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">JPO</string>
+    <string name="quiz_title">Quiz informatique</string>
+    <string name="jouer">Jouer</string>
+    <string name="easy">Facile</string>
+    <string name="normal">Normal</string>
+    <string name="back">Précédent</string>
+    <string name="next">Suivant</string>
+    <string name="numquestion">Question N°1</string>$
+    <string name="question">De combien de touches dispose un clavier standard ?</string>
+    <string name="rep1">103</string>
+    <string name="rep2">105</string>
+    <string name="rep3">110</string>
+    <string name="rep4">120</string>
+    <string name="credits">Par Steven Kerautret &amp; Louis Bizot</string>
+</resources>
