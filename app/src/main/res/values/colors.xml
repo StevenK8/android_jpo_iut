@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorGradientStart">#D9FF43</color>
+    <color name="colorGradientCenter">#F67831</color>
+    <color name="colorGradientEnd">#FF1493</color>
+    <color name="White">#FFFFFF</color>
+    <color name="dark">#4A4A4A</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorSecondGradientStart">#CADCFD</color>
+    <color name="colorSecondGradientCenter">#FFB2B2</color>
+    <color name="colorSecondGradientEnd">#B2FFC9</color>
+    <color name="Black">#000000</color>
+    <color name="dark_grey">#6D6D6D</color>
+    <color name="colorThirdGradientStart">#fccb90</color>
+    <color name="colorThirdGradientCenter">#d57eeb</color>
+    <color name="colorThirdGradientEnd">#38f9d7</color>
+</resources>
