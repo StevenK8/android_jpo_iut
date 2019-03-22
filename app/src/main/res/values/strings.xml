@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JPO</string>
+    <string name="app_name">Quiz info</string>
     <string name="quiz_title">Quiz informatique</string>
     <string name="jouer">Jouer</string>
     <string name="easy">Facile</string>

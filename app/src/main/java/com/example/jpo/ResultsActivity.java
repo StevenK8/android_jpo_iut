@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListAdapter;
@@ -44,19 +45,25 @@ public class ResultsActivity extends AppCompatActivity {
         String[][] tableauReponse = (String[][]) bundle.getSerializable("reponses");
         int[] reponseCorrecte = (int[]) bundle.getSerializable("bonneReponse");
         boolean[] isBonneReponse = (boolean[]) bundle.getSerializable("choix");
-        ListView listView = findViewById(R.id.listView);
+        expandablelistView = findViewById(R.id.listView);
 
         ArrayList<String> listeQuestions = new ArrayList<>(Arrays.asList(tableauQuestion));
 
         listeQuestionsItems = new LinkedHashMap<String, List<String>>();
 
-        for (int i=0; i<listeQuestions.size()-1; i++) {
+        for (int i=0; i<listeQuestions.size(); i++) {
             System.out.println(listeQuestions.size());
-            loadReponses(tableauReponse[i-1]);
-            listeQuestionsItems.put(listeQuestions.get(i), listeReponses);/*
+            loadReponses(tableauReponse[i]);
+            listeQuestionsItems.put(listeQuestions.get(i), listeReponses);
             try {
-                expandablelistView.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.colorAccent));
-            }catch (Exception e){}*/
+                if (isBonneReponse[i]) {
+                    View parent = ((ViewGroup) expandablelistView.getChildAt(i));
+                    ((ViewGroup) parent).getChildAt(1).setBackgroundColor(getResources().getColor(R.color.colorSecondGradientEnd));
+                    //expandablelistView.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.colorSecondGradientEnd));
+                } else {
+                    expandablelistView.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                }
+            }catch(Exception e){}
 
         }
 

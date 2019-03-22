@@ -71,8 +71,26 @@ public class QuizActivity extends AppCompatActivity {
     int[] reponseCorrecteFacile = {0,1,0,1,0,0,2,0,1,2,1,1,0,1,1};
 
     String[] tableauNumeroQuestionNormal ={"Question n°1","Question n°2","Question n°3","Question n°4","Question n°5","Question n°6","Question n°7","Question n°8","Question n°9","Question n°10"};
-    String[] tableauQuestionNormal={"Le programme qui fait la traduction en langage binaire est dit:","Quel est le résultat de cette fonction? \n int main(void){ \n int nombre_de_vie=5; \n printf(\"Vous avez %d vies\n\", nombreDeVies) \n nombre_de_vie-=2; \n printf(\"Vous avez %d vies\n\", nombreDeVies)","Que signifie l'abréviation OS ?","Quel est le protocole de l'ordinateur utilisé principalement pour le trafic réseau et Internet ?","Que signifie l'abréviation CSS?","Quel est le langage utilisé dans le code suivant?\n @sfont-face\n{\nfont-family:'BlackparkWeiner';\nfont-weight:normal;\nfont-style:normal;\n}","Qu'est ce qu'un Thread?","Comment appelle t-on le fait d'avoir plusieurs OS sur une même machine?","La conversion de 101 en base 2 est :","Parmi ces typologies de réseau, laquelle n’existe PAS ?","A quel indice commence les tableaux en langage C?"};
-    String[][] tableauReponseNormal={{"2","3","4","5"},{"Operating System","Open Software","Open Source"},{"64-bits","TCP/IP","IPX/SPX"},{"Create Simple Samples","Central Security Service","Cascading Style Sheets"},{"JAVA","Python","CSS","C"},{"Un processus léger","Un processus lourd","Un langage de programmation","Un rapport d'erreur généré par EClipse"},{"Un duo-boot","Un dual-boot","Un pluri-boot","Un mono-boot"},{"1","3","4","5"},{"Le réseau fleché","le réseau maillé","le réseau en anneau"},{"0","1","2","3"}};
+    String[] tableauQuestionNormal={"Le programme qui fait la traduction en langage binaire est dit:",
+            "Quel est le résultat de cette fonction? \n int main(void){ \n int nombre_de_vie=5; \n printf(\"Vous avez %d vies\n\", nombreDeVies) \n nombre_de_vie-=2; \n printf(\"Vous avez %d vies\n\", nombreDeVies)",
+            "Que signifie l'abréviation OS ?",
+            "Quel est le protocole de l'ordinateur utilisé principalement pour le trafic réseau et Internet ?",
+            "Que signifie l'abréviation CSS?",
+            "Quel est le langage utilisé dans le code suivant?\n @sfont-face\n{\nfont-family:'BlackparkWeiner';\nfont-weight:normal;\nfont-style:normal;\n}",
+            "Qu'est ce qu'un Thread?","Comment appelle t-on le fait d'avoir plusieurs OS sur une même machine?",
+            "La conversion de 101 en base 2 est :",
+            "Parmi ces typologies de réseau, laquelle n’existe PAS ?",
+            "A quel indice commence les tableaux en langage C?"};
+    String[][] tableauReponseNormal={{"2","3","4","5"},
+            {"Operating System","Open Software","Open Source"},
+            {"64-bits","TCP/IP","IPX/SPX"},
+            {"Create Simple Samples","Central Security Service","Cascading Style Sheets"},
+            {"JAVA","Python","CSS","C"},
+            {"Un processus léger","Un processus lourd","Un langage de programmation","Un rapport d'erreur généré par EClipse"},
+            {"Un duo-boot","Un dual-boot","Un pluri-boot","Un mono-boot"},
+            {"1","3","4","5"},
+            {"Le réseau fleché","le réseau maillé","le réseau en anneau"},
+            {"0","1","2","3"}};
     int[] reponseCorrecteNormal={2,0,1,2,2,0,1,3,0,0};
 
     String[] tableauNumeroQuestion;
