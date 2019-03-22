@@ -68,7 +68,7 @@ public class QuizActivity extends AppCompatActivity {
             {"non, seulement celles libres de droits de diffusion","oui si l'usage n'est pas commercial","oui, si je ne le dis à personne"},
             {"Malwares","antivirus","d'archivage des données"},
             {" Sa définition","Sa résolution","Sa révolution"}};
-    int[] reponseCorrecteFacile = {0,1,0,1,0,0,2,0,1,2,1,1,0,1,1};
+    int[] reponseCorrecteFacile = {1,2,0,1,0,0,2,0,1,2,1,1,0,1,1};
 
     String[] tableauNumeroQuestionNormal ={"Question n°1","Question n°2","Question n°3","Question n°4","Question n°5","Question n°6","Question n°7","Question n°8","Question n°9","Question n°10"};
     String[] tableauQuestionNormal={"Le programme qui fait la traduction en langage binaire est dit:",
@@ -77,11 +77,12 @@ public class QuizActivity extends AppCompatActivity {
             "Quel est le protocole de l'ordinateur utilisé principalement pour le trafic réseau et Internet ?",
             "Que signifie l'abréviation CSS?",
             "Quel est le langage utilisé dans le code suivant?\n @sfont-face\n{\nfont-family:'BlackparkWeiner';\nfont-weight:normal;\nfont-style:normal;\n}",
-            "Qu'est ce qu'un Thread?","Comment appelle t-on le fait d'avoir plusieurs OS sur une même machine?",
+            "Qu'est ce qu'un Thread?",
+            "Comment appelle t-on le fait d'avoir plusieurs OS sur une même machine?",
             "La conversion de 101 en base 2 est :",
-            "Parmi ces typologies de réseau, laquelle n’existe PAS ?",
-            "A quel indice commence les tableaux en langage C?"};
-    String[][] tableauReponseNormal={{"2","3","4","5"},
+            "Parmi ces typologies de réseau, laquelle n’existe PAS ?"};
+    String[][] tableauReponseNormal={{"Un éditeur de texte","Un debugger","Un compilateur"},
+            {"2","3","4","5"},
             {"Operating System","Open Software","Open Source"},
             {"64-bits","TCP/IP","IPX/SPX"},
             {"Create Simple Samples","Central Security Service","Cascading Style Sheets"},
@@ -89,9 +90,8 @@ public class QuizActivity extends AppCompatActivity {
             {"Un processus léger","Un processus lourd","Un langage de programmation","Un rapport d'erreur généré par EClipse"},
             {"Un duo-boot","Un dual-boot","Un pluri-boot","Un mono-boot"},
             {"1","3","4","5"},
-            {"Le réseau fleché","le réseau maillé","le réseau en anneau"},
-            {"0","1","2","3"}};
-    int[] reponseCorrecteNormal={2,0,1,2,2,0,1,3,0,0};
+            {"Le réseau fleché","le réseau maillé","le réseau en anneau"}};
+    int[] reponseCorrecteNormal={2,0,0,1,2,2,0,1,3,0};
 
     String[] tableauNumeroQuestion;
     String[] tableauQuestion;
@@ -145,10 +145,14 @@ public class QuizActivity extends AppCompatActivity {
         numero_question.setText(tableauNumeroQuestion[0]);
 
         affichage_question.setText(tableauQuestion[0]);
-        reponse1.setText(tableauReponse[0][0]);
-        reponse2.setText(tableauReponse[0][1]);
-        reponse3.setText(tableauReponse[0][2]);
-        reponse4.setText(tableauReponse[0][3]);
+        if(tableauReponse[0].length>0)
+            reponse1.setText(tableauReponse[0][0]);
+        if(tableauReponse[0].length>1)
+            reponse2.setText(tableauReponse[0][1]);
+        if(tableauReponse[0].length>2)
+            reponse3.setText(tableauReponse[0][2]);
+        if(tableauReponse[0].length>3)
+            reponse4.setText(tableauReponse[0][3]);
         progressBar.setMax(2000);
     }
     public void changerQuestionSuivant(View view){

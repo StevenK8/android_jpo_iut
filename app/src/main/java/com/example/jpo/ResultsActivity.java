@@ -53,8 +53,11 @@ public class ResultsActivity extends AppCompatActivity {
 
         for (int i=0; i<listeQuestions.size(); i++) {
             System.out.println(listeQuestions.size());
+            tableauReponse[i][reponseCorrecte[i]] = "Correct : " + tableauReponse[i][reponseCorrecte[i]];
             loadReponses(tableauReponse[i]);
             listeQuestionsItems.put(listeQuestions.get(i), listeReponses);
+            /*
+            //Change fond de la bonne réponse
             try {
                 if (isBonneReponse[i]) {
                     View parent = ((ViewGroup) expandablelistView.getChildAt(i));
@@ -64,7 +67,7 @@ public class ResultsActivity extends AppCompatActivity {
                     expandablelistView.getChildAt(i).setBackgroundColor(getResources().getColor(R.color.colorAccent));
                 }
             }catch(Exception e){}
-
+            */
         }
 
         expandablelistView = (ExpandableListView) findViewById(R.id.listView);
