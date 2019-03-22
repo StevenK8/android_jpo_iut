@@ -91,7 +91,7 @@ public class QuizActivity extends AppCompatActivity {
             {"Un duo-boot","Un dual-boot","Un pluri-boot","Un mono-boot"},
             {"1","3","4","5"},
             {"Le réseau fleché","le réseau maillé","le réseau en anneau"}};
-    int[] reponseCorrecteNormal={2,0,0,1,2,2,0,1,3,0};
+    int[] reponseCorrecteNormal={2,1,0,1,2,2,0,1,3,0};
 
     String[] tableauNumeroQuestion;
     String[] tableauQuestion;
@@ -147,12 +147,28 @@ public class QuizActivity extends AppCompatActivity {
         affichage_question.setText(tableauQuestion[0]);
         if(tableauReponse[0].length>0)
             reponse1.setText(tableauReponse[0][0]);
+        else{
+            reponse1.setText("");
+            remove_button(reponse1);
+        }
         if(tableauReponse[0].length>1)
             reponse2.setText(tableauReponse[0][1]);
+        else{
+            reponse2.setText("");
+            remove_button(reponse2);
+        }
         if(tableauReponse[0].length>2)
             reponse3.setText(tableauReponse[0][2]);
+        else{
+            reponse3.setText("");
+            remove_button(reponse3);
+        }
         if(tableauReponse[0].length>3)
             reponse4.setText(tableauReponse[0][3]);
+        else{
+            reponse4.setText("");
+            remove_button(reponse4);
+        }
         progressBar.setMax(2000);
     }
     public void changerQuestionSuivant(View view){

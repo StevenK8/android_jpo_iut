@@ -74,16 +74,6 @@ public class ResultsActivity extends AppCompatActivity {
         final ExpandableListAdapter expListAdapter = new ListAdapter(
                 this, listeQuestions, listeQuestionsItems);
         expandablelistView.setAdapter(expListAdapter);
-
-
-        for(int i=0; i<reponseCorrecte.length; i++){
-            System.out.println(tableauQuestion[i]+"\n"+tableauReponse[i][reponseCorrecte[i]]);
-            if(isBonneReponse[i]){
-                System.out.println("ok");
-            }else{
-                System.out.println("X");
-            }
-        }
     }
 
     private void loadReponses(String[] reponses) {
